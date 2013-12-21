@@ -1,0 +1,36 @@
+<html>
+<head>
+	<script src="sockjs-0.3.min.js"></script>
+	<script src="vertxbus-2.1.js"></script>
+	<script src="angular.js"></script>
+	<script src="main.js"></script>
+</head>
+<body ng-app="HelloApp">
+
+	<div ng-controller="HelloController">
+		<input type="text" ng-model="message"/>
+		<button ng-click="save()">Save</button>
+	</div>
+	<script>
+
+			// var eb = new vertx.EventBus("http://10.0.0.160:8877/eventbus");
+
+			// console.log("--eb--");
+			// console.log(eb);
+
+			// eb.onopen = function(){
+			// 	eb.registerHandler("hello.event", function(message){
+			// 		console.log(JSON.stringify(message));
+
+			// 		var div = document.getElementById("div");
+			// 		var content = document.createTextNode(message);
+			// 		div.appendChild(content);
+			// 	});
+
+			// 	eb.send("hello.event", "Hi, I'm JavaScript!");
+			// }
+
+		</script>
+		<div id="div"></div>
+	</body>
+	</html>
